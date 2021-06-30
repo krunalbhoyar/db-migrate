@@ -1,0 +1,1 @@
+CREATE TABLE CARS (CARID int, CARNAME varchar (100))
