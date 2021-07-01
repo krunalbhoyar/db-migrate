@@ -3,12 +3,12 @@ version: 0.2
 phases:
   build:
     commands:
-      - wget -qO- https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/7.9.1/flyway-commandline-7.9.1-linux-x64.tar.gz | tar xvz && ln -s `pwd`/flyway-7.9.1/flyway /usr/local/bin
-      - cp -r migrate/* flyway-7.9.1/sql
+      - wget -qO- https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/7.11.0/flyway-commandline-7.11.0-linux-x64.tar.gz | tar xvz && ln -s `pwd`/flyway-7.11.0/flyway /usr/local/bin
+      - cp -r migrate/* flyway-7.11.0/sql
       - ls -l
       - echo list the content of sql
-      - ls flyway-7.9.1/sql
-      - cd flyway-7.9.1/
+      - ls flyway-7.11.0/sql
+      - cd flyway-7.11.0/
       - cd conf/
       - echo >> flyway.conf
       - echo flyway.url=jdbc:mysql://database-2.cluster-c4afibl7mmkm.us-east-1.rds.amazonaws.com:3306 >> flyway.conf
