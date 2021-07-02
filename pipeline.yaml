@@ -88,3 +88,5 @@ Resources:
                 - "ssm:GetParameters"
                 Effect: Allow
                 Resource: '*'
+                
+                
